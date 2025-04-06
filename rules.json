@@ -1,0 +1,37 @@
+{
+    "rules": [
+      {
+        "conditions": [
+          {
+            "field": "From",
+            "predicate": "equals",
+            "value": "BookMyShow <tickets@bookmyshow.email>"
+          },
+          {
+            "field": "Subject",
+            "predicate": "contains",
+            "value": "tickets"
+          }
+        ],
+        "predicate_type": "ALL",
+        "action": "mark_as_read"
+      },
+      {
+        "conditions": [
+          {
+            "field": "From",
+            "predicate": "equals",
+            "value": "LinkedIn <jobs-listings@linkedin.com>, LinkedIn <messages-noreply@linkedin.com>, LinkedIn <notifications-noreply@linkedin.com>, LinkedIn <jobs-noreply@linkedin.com>, Naukri Alerts <naukrialerts@naukri.com>"
+          },
+          {
+            "field": "Subject",
+            "predicate": "contains",
+            "value": "hiring, developer, kajol"
+          }
+        ],
+        "predicate_type": "ANY",
+        "action": "move_message"
+      }
+    ]
+  }
+  
