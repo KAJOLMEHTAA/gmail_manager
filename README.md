@@ -25,13 +25,17 @@ A Python application that manages Gmail emails using custom rules to automatical
 
 1. Clone this repository
 
-2. Install required Python packages:
-```pip install -r requirements.txt```
+2. Install required Python packages: 
+```bash 
+pip install -r requirements.txt
+```
 
 3. Create Postgres DB:
-```CREATE DATABASE <dbname>;```
-```CREATE USER <dbuser> WITH PASSWORD <dbpass>;```
-```GRANT ALL PRIVILEGES ON DATABASE <dbname> TO <dbuser>;```
+```bash
+CREATE DATABASE <dbname>;
+CREATE USER <dbuser> WITH PASSWORD <dbpass>;
+GRANT ALL PRIVILEGES ON DATABASE <dbname> TO <dbuser>;
+```
 
 4. Setup Gmail API:
 Step 1: Go to Google Cloud Console
@@ -47,4 +51,6 @@ Step 6: Add Test users
 Step 7: Create and Download JSON Key
 
 5. How to run:
-```python3 main.py```
+```bash 
+python3 main.py
+```
